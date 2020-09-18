@@ -1,5 +1,6 @@
 """
     poll方法IO多路复用并发模型
+    方案一
 """
 from socket import *
 from select import *
