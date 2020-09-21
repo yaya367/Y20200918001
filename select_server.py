@@ -1,5 +1,7 @@
 """
     select IO多路复用并发模型
+    重点代码！！！！
+
 """
 from select import select
 from socket import *
@@ -12,7 +14,6 @@ sockfd.listen(5) #设置为监听套接字
 #设置为非阻塞状态
 sockfd.setblocking(False)
 
-#select方法
 #设置关注列表
 rlist=[sockfd] #关注监听套接字
 wlist=[]
